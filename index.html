@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCanvas | Modern Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-['Poppins']">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section with Vanta.js background -->
+    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0" id="vanta-bg"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400">
+                Code<span class="font-['JetBrains+Mono']">{</span>Canvas<span class="font-['JetBrains+Mono']">}</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10">Where creativity meets clean code</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#work" class="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-8 py-3 border border-purple-400 text-purple-400 rounded-full font-medium hover:bg-purple-900/30 transition-all">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+            <a href="#about" class="text-gray-400 hover:text-white">
+                <i data-feather="chevron-down" class="w-8 h-8"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-cyan-500 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
+                    <img src="http://static.photos/technology/640x360/42" alt="Profile" class="relative rounded-2xl w-full h-auto object-cover">
+                </div>
+            </div>
+            <div class="md:w-2/3">
+                <h2 class="text-4xl font-bold mb-6 flex items-center">
+                    <span class="mr-3 text-purple-400">#</span> About Me
+                </h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    Passionate developer with 5+ years of experience crafting digital experiences. I specialize in modern web technologies and clean, efficient code that delivers results.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-purple-500 transition-colors">
+                        <i data-feather="code" class="w-6 h-6 text-purple-400 mb-2"></i>
+                        <h3 class="font-medium">Web Development</h3>
+                    </div>
+                    <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
+                        <i data-feather="smartphone" class="w-6 h-6 text-cyan-400 mb-2"></i>
+                        <h3 class="font-medium">Responsive Design</h3>
+                    </div>
+                    <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-pink-500 transition-colors">
+                        <i data-feather="users" class="w-6 h-6 text-pink-500 mb-2"></i>
+                        <h3 class="font-medium">User Experience</h3>
+                    </div>
+                </div>
+                <a href="about.html" class="inline-block mt-8 px-6 py-2 rounded-full border border-purple-400 text-purple-400 hover:bg-purple-900/30 transition-colors">
+                    More About Me →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 bg-gray-800/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-6 text-center">
+                <span class="text-purple-400">#</span> My Work
+            </h2>
+            <p class="text-xl text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                A selection of my recent projects and contributions
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-purple-500 transition-all hover:shadow-lg hover:shadow-purple-500/20">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-400 mb-4">Full-stack e-commerce solution with React and Node.js</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">React</span>
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">Node.js</span>
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">MongoDB</span>
+                        </div>
+                    </div>
+                    <a href="projects.html" class="absolute inset-0 z-10"></a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-cyan-400 transition-all hover:shadow-lg hover:shadow-cyan-500/20">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/2" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mobile Fitness App</h3>
+                        <p class="text-gray-400 mb-4">Cross-platform fitness tracking application</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">Flutter</span>
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">Firebase</span>
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">Dart</span>
+                        </div>
+                    </div>
+                    <a href="projects.html" class="absolute inset-0 z-10"></a>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-pink-500 transition-all hover:shadow-lg hover:shadow-pink-500/20">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/3" alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dashboard UI</h3>
+                        <p class="text-gray-400 mb-4">Analytics dashboard for business intelligence</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">Vue.js</span>
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">Tailwind</span>
+                            <span class="px-2 py-1 bg-gray-700 text-sm rounded">Chart.js</span>
+                        </div>
+                    </div>
+                    <a href="projects.html" class="absolute inset-0 z-10"></a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="projects.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                    View All Projects
+                    <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-6 text-center">
+            <span class="text-purple-400">#</span> Get In Touch
+        </h2>
+        <p class="text-xl text-center text-gray-400 mb-12">
+            Have a project in mind? Let's build something amazing together.
+        </p>
+        
+        <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="name" class="block mb-2 text-gray-300">Your Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="John Doe">
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-gray-300">Your Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="hello@example.com">
+                </div>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-gray-300">Subject</label>
+                <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Project Inquiry">
+            </div>
+            <div>
+                <label for="message" class="block mb-2 text-gray-300">Message</label>
+                <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                Send Message
+                <i data-feather="send" class="inline ml-2 w-5 h-5"></i>
+            </button>
+        </form>
+    </section>
+
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x7f3ff5,
+            backgroundColor: 0x111827,
+            points: 10.00,
+            maxDistance: 22.00,
+            spacing: 17.00
+        });
+    </script>
+</body>
+</html>

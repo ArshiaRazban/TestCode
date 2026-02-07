@@ -1,0 +1,243 @@
+/* Custom styles */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7c3aed;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6d28d9;
+}
+
+/* Animation classes */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Custom gradient text */
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Navbar styles */
+.custom-navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(17, 24, 39, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+.custom-navbar .logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #8B5CF6 0%, #EC4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.custom-navbar .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.custom-navbar a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.custom-navbar a:hover {
+    color: #8B5CF6;
+}
+
+.custom-navbar a.active {
+    color: #8B5CF6;
+}
+
+.custom-navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #8B5CF6;
+    transition: width 0.3s ease;
+}
+
+.custom-navbar a:hover::after {
+    width: 100%;
+}
+
+.custom-navbar .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .custom-navbar .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: rgba(17, 24, 39, 0.95);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .custom-navbar .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .custom-navbar .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* Footer styles */
+.custom-footer {
+    display: block;
+    background-color: #111827;
+    color: #9CA3AF;
+    padding: 4rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.custom-footer .footer-logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #8B5CF6 0%, #EC4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.custom-footer .footer-about p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.custom-footer .social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.custom-footer .social-links a {
+    color: #9CA3AF;
+    transition: color 0.3s ease;
+}
+
+.custom-footer .social-links a:hover {
+    color: #8B5CF6;
+}
+
+.custom-footer .footer-links h3 {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-footer .footer-links h3::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, #8B5CF6 0%, #EC4899 100%);
+}
+
+.custom-footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-footer .footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.custom-footer .footer-links a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.custom-footer .footer-links a:hover {
+    color: #8B5CF6;
+}
+
+.custom-footer .footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .custom-footer .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

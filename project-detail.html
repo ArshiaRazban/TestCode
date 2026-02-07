@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail | CodeCanvas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-['Poppins']">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Project Hero -->
+    <section class="relative py-32 px-4 bg-gradient-to-br from-gray-800 to-gray-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-block px-4 py-2 bg-gray-800 rounded-full border border-gray-700 mb-6">
+                <span class="text-purple-400">Web Development</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                E-Commerce <span class="text-purple-400">Platform</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+                A full-featured online shopping solution with modern UI and seamless checkout experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                <!-- Project Gallery -->
+                <div class="mb-12">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="http://static.photos/technology/1200x630/1" alt="Project Screenshot" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="rounded-xl overflow-hidden cursor-pointer">
+                            <img src="http://static.photos/technology/640x360/1" alt="Project Screenshot" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-xl overflow-hidden cursor-pointer">
+                            <img src="http://static.photos/technology/640x360/2" alt="Project Screenshot" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-xl overflow-hidden cursor-pointer">
+                            <img src="http://static.photos/technology/640x360/3" alt="Project Screenshot" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Details -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="mr-3 text-purple-400">#</span> Project Details
+                    </h2>
+                    <div class="prose prose-invert max-w-none">
+                        <p>
+                            This e-commerce platform was built for a client who wanted a modern, performant online store that could handle thousands of products and customers. The project involved designing and implementing all aspects of the shopping experience, from product browsing to checkout.
+                        </p>
+                        <h3 class="text-2xl font-bold mt-8 mb-4">Key Features</h3>
+                        <ul>
+                            <li>Responsive design that works flawlessly on all devices</li>
+                            <li>Product catalog with advanced filtering and search</li>
+                            <li>Shopping cart with real-time updates</li>
+                            <li>Secure checkout with multiple payment options</li>
+                            <li>User accounts with order history</li>
+                            <li>Admin dashboard for inventory management</li>
+                        </ul>
+                        <h3 class="text-2xl font-bold mt-8 mb-4">Challenges & Solutions</h3>
+                        <p>
+                            One of the main challenges was optimizing the performance of the product listings page with thousands of items. I implemented virtual scrolling and efficient data fetching to ensure smooth performance even with large datasets.
+                        </p>
+                        <p>
+                            Another challenge was the complex checkout flow with multiple payment options and shipping methods. I created a modular system that could be easily extended with new payment gateways and shipping providers.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Technology Stack -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="mr-3 text-cyan-400">#</span> Technology Stack
+                    </h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="code" class="w-6 h-6 text-cyan-400 mr-2"></i>
+                                <h3 class="font-medium">Frontend</h3>
+                            </div>
+                            <ul class="text-sm text-gray-400 space-y-1">
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Tailwind CSS</li>
+                                <li>React Hook Form</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-purple-500 transition-colors">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="server" class="w-6 h-6 text-purple-500 mr-2"></i>
+                                <h3 class="font-medium">Backend</h3>
+                            </div>
+                            <ul class="text-sm text-gray-400 space-y-1">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>Mongoose</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-pink-500 transition-colors">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="cloud" class="w-6 h-6 text-pink-500 mr-2"></i>
+                                <h3 class="font-medium">Services</h3>
+                            </div>
+                            <ul class="text-sm text-gray-400 space-y-1">
+                                <li>AWS S3</li>
+                                <li>Stripe</li>
+                                <li>SendGrid</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Meta -->
+            <div>
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 sticky top-24">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i data-feather="info" class="w-5 h-5 mr-2 text-purple-400"></i>
+                        Project Information
+                    </h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="text-sm text-gray-400">Client</div>
+                            <div>FashionHub</div>
+                        </li>
+                        <li>
+                            <div class="text-sm text-gray-400">Year</div>
+                            <div>2023</div>
+                        </li>
+                        <li>
+                            <div class="text-sm text-gray-400">Category</div>
+                            <div>E-Commerce, Web Development</div>
+                        </li>
+                        <li>
+                            <div class="text-sm text-gray-400">Duration</div>
+                            <div>6 months</div>
+                        </li>
+                        <li>
+                            <div class="text-sm text-gray-400">Team Size</div>
+                            <div>4 people</div>
+                        </li>
+                        <li>
+                            <div class="text-sm text-gray-400">My Role</div>
+                            <div>Lead Frontend Developer</div>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mt-8 mb-4 flex items-center">
+                        <i data-feather="link" class="w-5 h-5 mr-2 text-cyan-400"></i>
+                        Project Links
+                    </h3>
+                    <div class="space-y-3">
+                        <a href="#" class="flex items-center px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                            <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                            <i data-feather="github" class="w-4 h-4 mr-2"></i>
+                            GitHub Repository
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                            <i data-feather="file-text" class="w-4 h-4 mr-2"></i>
+                            Case Study (PDF)
+                        </a>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold mt-8 mb-4 flex items-center">
+                        <i data-feather="tag" class="w-5 h-5 mr-2 text-pink-400"></i>
+                        Tags
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-700 text-sm rounded">React</span>
+                        <span class="px-2 py-1 bg-gray-700 text-sm rounded">E-Commerce</span>
+                        <span class="px-2 py-1 bg-gray-700 text-sm rounded">Node.js</span>
+                        <span class="px-2 py-1 bg-gray-700 text-sm rounded">MongoDB</span>
+                        <span class="px-2 py-1 bg-gray-700 text-sm rounded">Stripe</span>
+                        <span class="px-2 py-1 bg-gray-700 text-sm rounded">Responsive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project Navigation -->
+        <div class="mt-16 flex flex-col sm:flex-row justify-between gap-4">
+            <a href="#" class="flex items-center px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:bg-gray-700 transition-colors">
+                <i data-feather="arrow-left" class="w-5 h-5 mr-2"></i>
+                Previous Project
+            </a>
+            <a href="projects.html" class="flex items-center justify-center px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:bg-gray-700 transition-colors">
+                <i data-feather="grid" class="w-5 h-5 mr-2"></i>
+                All Projects
+            </a>
+            <a href="#" class="flex items-center justify-end px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:bg-gray-700 transition-colors">
+                Next Project
+                <i data-feather="arrow-right" class="w-5 h-5 ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Project gallery image click handler
+        const thumbnails = document.querySelectorAll('.project-thumbnail');
+        const mainImage = document.querySelector('.project-main-image');
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const src = thumbnail.querySelector('img').src;
+                mainImage.src = src;
+            });
+        });
+    </script>
+</body>
+</html>
