@@ -11,24 +11,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assest/css/style.css">
 </head>
 
 <body>
 
   <header id="header">
-    <nav class="container">
-      <div class="logo">par</div>
-      <div class="nav-links">
-        <a href="index.html">خانه</a>
-        <a href="services.html">خدمات</a>
-        <a href="portfolio.html">نمونه کارها</a>
-        <a href="about.html">درباره ما</a>
-        <a href="blog.html">وبلاگ</a>
-        <a href="contact.html">تماس</a>
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">par</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">خانه</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">خدمات</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">نمونه کارها</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">درباره ما</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">وبلاگ</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">تماس</a></li>
+          </ul>
+        </div>
       </div>
-      <button class="theme-toggle" aria-label="تغییر تم"><i class="fas fa-moon"></i></button>
     </nav>
+
   </header>
 
   <section class="hero">
@@ -38,91 +49,117 @@
     </div>
   </section>
 
-  <section id="pricing">
+  <section class="py-5 bg-light py-lg-6" id="pricing">
     <div class="container">
-      <h2 data-aos="fade-up">پلن‌های خدمات</h2>
+      <h2 data-aos="fade-up">پلن‌های مناسب هر کسب‌وکار</h2>
       <div class="pricing-table">
-        <div class="plan" data-aos="zoom-in" data-aos-delay="100">
-          <div class="plan-header">
-            <h3>پایه</h3>
-            <div class="plan-price">۴۹۰,۰۰۰ <small>تومان</small></div>
-            <p>یک‌بار پرداخت</p>
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-header">
+                <h3>پایه</h3>
+                <div class="card-price">۴۹۰,۰۰۰ <small>تومان</small></div>
+                <p>یک‌بار پرداخت</p>
+              </div>
+              <ul class="card-features">
+                <li>۱ منو دیجیتال</li>
+                <li>تا ۵۰ آیتم</li>
+                <li>پشتیبانی پایه</li>
+                <li>QR کد ساده</li>
+                <li>بدون آمار پیشرفته</li>
+              </ul>
+              <div style="padding:0 2rem 2rem;">
+                <a href="contact.html" class="btn">انتخاب پلن</a>
+              </div>
+            </div>
           </div>
-          <ul class="plan-features">
-            <li>۱ منو دیجیتال</li>
-            <li>تا ۵۰ آیتم</li>
-            <li>پشتیبانی پایه</li>
-            <li>QR کد ساده</li>
-            <li>بدون آمار پیشرفته</li>
-            <li>دمو زنده: <a href="#">مشاهده</a></li>
-          </ul>
-          <div style="padding:0 2rem 2rem;">
-            <a href="contact.html" class="btn">انتخاب پلن</a>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card popular" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card-header">
+                <h3>حرفه‌ای (محبوب)</h3>
+                <div class="card-price">۹۹۰,۰۰۰ <small>تومان</small></div>
+                <p>یک‌بار پرداخت</p>
+              </div>
+              <ul class="card-features">
+                <li>تا ۳ منو</li>
+                <li>نامحدود آیتم</li>
+                <li>آمار بازدید کامل</li>
+                <li>چندین دسته‌بندی</li>
+                <li>پشتیبانی اولویت‌دار</li>
+                <li>طراحی سفارشی جزئی</li>
+              </ul>
+              <div style="padding:0 2rem 2rem;">
+                <a href="contact.html" class="btn">انتخاب پلن</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="plan popular" data-aos="zoom-in" data-aos-delay="200">
-          <div class="plan-header">
-            <h3>حرفه‌ای (محبوب)</h3>
-            <div class="plan-price">۹۹۰,۰۰۰ <small>تومان</small></div>
-            <p>یک‌بار پرداخت</p>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card-header">
+                <h3>پریمیوم</h3>
+                <div class="card-price">تماس بگیرید</div>
+                <p>سفارشی</p>
+              </div>
+              <ul class="card-features">
+                <li>منوهای نامحدود</li>
+                <li>ادغام با POS</li>
+                <li>پنل مدیریت چند شعبه</li>
+                <li>طراحی ۱۰۰٪ سفارشی</li>
+                <li>پشتیبانی ۲۴/۷</li>
+              </ul>
+              <div style="padding:0 2rem 2rem;">
+                <a href="contact.html" class="btn">درخواست مشاوره</a>
+              </div>
+            </div>
           </div>
-          <ul class="plan-features">
-            <li>تا ۳ منو</li>
-            <li>نامحدود آیتم</li>
-            <li>آمار بازدید کامل</li>
-            <li>چندین دسته‌بندی</li>
-            <li>پشتیبانی اولویت‌دار</li>
-            <li>طراحی سفارشی جزئی</li>
-            <li>دمو زنده: <a href="#">مشاهده</a></li>
-          </ul>
-          <div style="padding:0 2rem 2rem;">
-            <a href="contact.html" class="btn">انتخاب پلن</a>
-          </div>
-        </div>
-        <div class="plan" data-aos="zoom-in" data-aos-delay="300">
-          <div class="plan-header">
-            <h3>پریمیوم</h3>
-            <div class="plan-price">تماس بگیرید</div>
-            <p>سفارشی</p>
-          </div>
-          <ul class="plan-features">
-            <li>منوهای نامحدود</li>
-            <li>ادغام با POS</li>
-            <li>پنل مدیریت چند شعبه</li>
-            <li>طراحی ۱۰۰٪ سفارشی</li>
-            <li>پشتیبانی ۲۴/۷</li>
-            <li>دمو زنده: <a href="#">مشاهده</a></li>
-          </ul>
-          <div style="padding:0 2rem 2rem;">
-            <a href="contact.html" class="btn">درخواست مشاوره</a>
-          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section id="details" style="background:#f1f5f9;">
+  <section id="details" class="py-5 bg-light">
     <div class="container">
-      <h2 data-aos="fade-up">جزئیات خدمات</h2>
-      <div class="service-details">
-        <div class="detail-card" data-aos="fade-up" data-aos-delay="100">
-          <h3>طراحی سفارشی</h3>
-          <p>طراحی بر اساس برند شما با رنگ‌ها، لوگو و فونت اختصاصی.</p>
-          <img src="https://via.placeholder.com/400x250?text=طراحی+سفارشی" alt="طراحی سفارشی"
-            style="width:100%; border-radius:8px; margin-top:1rem;">
+
+      <h2 class="text-center md-5" data-aos="fade-up">جزئیات خدمات</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 detail-card" data-aos="fade-up" data-aos-delay="100">
+
+            <h3>طراحی سفارشی</h3>
+            <p>طراحی بر اساس برند شما با رنگ‌ها، لوگو و فونت اختصاصی.</p>
+            <img src="https://via.placeholder.com/400x250?text=طراحی+سفارشی" alt="طراحی سفارشی"
+              style="width:100%; border-radius:8px; margin-top:1rem;">
+
+          </div>
         </div>
-        <div class="detail-card" data-aos="fade-up" data-aos-delay="200">
-          <h3>ادغام با سیستم‌ها</h3>
-          <p>اتصال به نرم‌افزارهای حسابداری و سفارش‌گیری آنلاین.</p>
-          <img src="https://via.placeholder.com/400x250?text=ادغام+سیستم" alt="ادغام سیستم"
-            style="width:100%; border-radius:8px; margin-top:1rem;">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 detail-card" data-aos="fade-up" data-aos-delay="200">
+
+            <h3>ادغام با سیستم‌ها</h3>
+            <p>اتصال به نرم‌افزارهای حسابداری و سفارش‌گیری آنلاین.</p>
+            <img src="https://via.placeholder.com/400x250?text=ادغام+سیستم" alt="ادغام سیستم"
+              style="width:100%; border-radius:8px; margin-top:1rem;">
+
+          </div>
         </div>
-        <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
-          <h3>پشتیبانی و به‌روزرسانی</h3>
-          <p>پشتیبانی مداوم و به‌روزرسانی‌های رایگان برای پلن‌های بالاتر.</p>
-          <img src="https://via.placeholder.com/400x250?text=پشتیبانی" alt="پشتیبانی"
-            style="width:100%; border-radius:8px; margin-top:1rem;">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 detail-card" data-aos="fade-up" data-aos-delay="300">
+
+            <h3>پشتیبانی و به‌روزرسانی</h3>
+            <p>پشتیبانی مداوم و به‌روزرسانی‌های رایگان برای پلن‌های بالاتر.</p>
+            <img src="https://via.placeholder.com/400x250?text=پشتیبانی" alt="پشتیبانی"
+              style="width:100%; border-radius:8px; margin-top:1rem;">
+
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -141,6 +178,9 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
     AOS.init({ duration: 800, once: true });
     window.addEventListener('scroll', () => {
