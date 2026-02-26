@@ -47,14 +47,33 @@ header.scrolled {
   padding: 5rem 0;
 }
 
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.logo {
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  margin: 0;
+
   font-size: 1.6rem;
   font-weight: 700;
   color: white;
 }
 
-.nav-links a:hover {
+/* رنگ لینک‌های هدر */
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* حالت هاور */
+.navbar-nav .nav-link:hover {
   color: var(--accent);
 }
 
@@ -160,6 +179,40 @@ h2 {
   z-index: 10;
 }
 
+/* ===== SEO Section ===== */
+
+.seo-section {
+  background: var(--light);
+}
+
+.seo-content {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.seo-content h3 {
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  color: var(--dark);
+}
+
+.seo-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .seo-content {
+    padding: 2rem;
+  }
+}
+
 .card-header {
   background: var(--primary);
   color: white;
@@ -179,6 +232,37 @@ h2 {
 .card-features li {
   margin: 1rem 0;
   font-size: 1.1rem;
+}
+
+.internal-link-box {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 2rem;
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.internal-link-box p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.internal-link-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.internal-link-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .testimonials {
@@ -203,6 +287,78 @@ h2 {
   color: white;
   text-align: center;
   padding-bottom: 6rem;
+}
+
+/* ===== FAQ Section ===== */
+
+.faq-section {
+  background: var(--light);
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.5rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+.faq-question:hover {
+  color: var(--primary);
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+  color: var(--primary);
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1.8rem;
+}
+
+.faq-answer p {
+  color: var(--gray);
+  line-height: 2;
+  padding-bottom: 1.5rem;
+}
+
+/* حالت باز شده */
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding-top: 0.5rem;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
 }
 
 footer {
